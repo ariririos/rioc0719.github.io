@@ -4,8 +4,7 @@
     <meta charset='utf-8'>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet"> 
-    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
     <style>
       body {
         font: 12pt 'Hind', sans-serif;
@@ -18,14 +17,28 @@
       h1.title .title-the {
         font-size: 12pt;
       }
+      h2.subtitle {
+        font: 300 14pt 'Lato', sans-serif;
+        color: #387bbe;
+        text-align: center;
+      }
+      h3.question {
+        font-weight: 14pt;
+        color: #387bbe;
+        color: #434343;
+      }
+      section#questions p, section#questions li {
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+      }
       .poster {
         font: 96pt 'Lato', sans-serif;
         text-align: center;
       }
-      #poster b {
+      .poster b {
         font-weight: 700;
       }
-      #poster i {
+      .poster i {
         font-weight: 300;
       }
       .person-name {
@@ -44,42 +57,39 @@
     </style>
     <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
     <script>
-      $(() => {
-        let $posters = $('.poster').hide()
-        let i = 0;
-        (function cycle() {
-          $posters.eq(i).fadeIn(500).delay(2000).fadeOut(500, cycle);
-          i = ++i % $posters.length;
-        })();
-      });
+    $(() => {
+            let $posters = $('.poster').hide()
+            let i = 0;
+            (function cycle() {
+              $posters.eq(i).fadeIn(500).delay(1000).fadeOut(500, cycle);
+              i = ++i % $posters.length;
+            })();
+          });
     </script>
   </head>
   <body>
     <h1 class='title'><i class='title-the'>the</i> ACADEMIC FRAMEWORK FORUM</h1>
-    <div id='poster-wrap'>
-      <div class='poster' id='poster-1'>
-        <span class='poster-line'><b>C</b><i>ALL</i></span><br/>
-        <span class='poster-line'><b>F</b><i>OR</i></span><br/>
-        <span class='poster-line'><b>I</b><i>DEAS</i></span><br/>
-      </div>
-      <div class='poster' id='poster-2'>
-        <span class='poster-line'><b>O</b><i>PEN</i></span><br/>
-        <span class='poster-line'><b>F</b><i>OR</i></span><br/>
-        <span class='poster-line'><b>I</b><i>DEAS</i></span><br/>
-      </div>
-      <div class='poster' id='poster-3'>
-        <span class='poster-line'><b>O</b><i>PEN</i></span><br/>
-        <span class='poster-line'><b>F</b><i>OR</i></span><br/>
-        <span class='poster-line'><b>A</b><i>LL</i></span><br/>
-      </div>
-      <div class='poster' id='poster-4'>
-        <span class='poster-line'><b>C</b><i>ALL</i></span><br/>
-        <span class='poster-line'><b>F</b><i>OR</i></span><br/>
-        <span class='poster-line'><b>A</b><i>LL</i></span><br/>
-      </div>
-    </div>
-    <div class='center'>View the First Quarter Meeting agenda here: <a href='./AFF%20First%20Quarter%20Meeting.pdf'>Link</a></div>
-    <br/>
+    <h2 class='subtitle'><i>A Framework Forward</i></h2>
+    <section id='questions'>
+      <h3 class='question'>What is the Academic Framework Forum?</h3>
+      <p>The Academic Framework Forum (AFF) is a new organization that intends to promote academic success for everyone at OHS. We are a place where people can come to discuss new ideas about academic support, get help organizing those ideas, and support others' ideas and projects.</p>
+      <h3 class='question'>What does the AFF do?</h3>
+      <p>Our main project is the Academic Support Network, which runs a network of Teaching Assistants in many classes on campus. These Teaching Assistants answer questions, do one-on-one tutoring, run study groups, have review sessions, and more.</p>
+      <p>We also run SAT/AP/SAT II practice tests, and soon plan to assist with the college applications process and connect students with summer programs at MIT, UF, and other colleges.</p>
+      <h3 class='question'>Do you cover my class?</h3>
+      <p>Here is the current list of classes covered:</p>
+      <ul>
+        <li>AP Calculus AB</li>
+        <li>AP Chemistry/Chemistry II Honors</li>
+      </ul>
+      <p>More classes are being added over the next few weeks.</p>
+      <h3 class='question'>How do I get my class covered?</h3>
+      <p>Contact <span class='person-name'>Cristian Rios</span> <span class='person-year'>'18</span> (contact info below) to request that a class be added.</p>
+      <h3 class='question'>Can I get one-on-one tutoring?</h3>
+      <p>The AFF has many students who may be interested in doing one-on-one tutoring in a subject you request. Contact <span class='person-name'>Cristian Rios</span> <span class='person-year'>'18</span> (contact info below) for more information.</p>
+      <h3 class='question'>How do I help?</h3>
+      <p>You can help in many ways, including by attending AFF meetings to discuss proposed ideas or bring your own, applying to become a Teaching Assistant, or applying to become an AFF member. Contact <span class='person-name'>Cristian Rios</span> <span class='person-year'>'18</span> (contact info below) for more information on applications.</p>
+    </section>
     <div class='center'>Contact <span class='person-name'>Cristian Rios</span> <span class='person-year'>'18</span>, Director at:
       <br/>
       <ul>
@@ -87,5 +97,11 @@
         <li><a href='mailto:cristian.rios@okeeschools.com'>cristian.rios@okeeschools.com</a></li>
       </ul>
     </div>
+    <section id='documents'>
+      <p>View the AFF Prospectus here: <a href="https://docs.google.com/a/okee.k12.fl.us/document/d/16kSoYMb5AiBcDXqjtowkfZYzMqLug0lRcY3H70m4TUg/edit?usp=sharing">AFF Propsectus (Google Doc)</a></p>
+      <p>View the Academic Support Network Prospectus here: <a href="https://docs.google.com/a/okee.k12.fl.us/presentation/d/1jHKMIOzeWLW44wJ4N2eI-yQfL8_WJLY3sAYfljXtmEA/edit?usp=sharing">ASN Prospectus (Google Slides)</a></p>
+      <p>View the Examinations and Assessments Project Prospectus here: <a href="https://docs.google.com/a/okee.k12.fl.us/document/d/1A6MUeAVYNkXsZ3CAmqWt9KF_l2KmGQYv6oAVa6yroTI/edit?usp=sharing">EAP Prospectus (Google Doc)</a></p>
+      <p>Google Drive link to all of our documents: <a href="https://drive.google.com/drive/folders/0B8ai0HKETJIxcUY2d210NnVsSTQ?usp=sharing">AFF 2017-2018</a></p>
+    </section>
   </body>
 </html>

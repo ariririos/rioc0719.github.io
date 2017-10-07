@@ -55,27 +55,15 @@
         text-align: left;
       }
     </style>
-    <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
-    <script>
-    $(() => {
-            let $posters = $('.poster').hide()
-            let i = 0;
-            (function cycle() {
-              $posters.eq(i).fadeIn(500).delay(1000).fadeOut(500, cycle);
-              i = ++i % $posters.length;
-            })();
-          });
-    </script>
     <!-- Global Site Tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-60459181-4"></script>
     <script>
- 	 window.dataLayer = window.dataLayer || [];
- 	 function gtag(){dataLayer.push(arguments);}
- 	 gtag('js', new Date());
-
-  	gtag('config', 'UA-60459181-4');
+ 	    window.dataLayer = window.dataLayer || [];
+ 	    function gtag(){dataLayer.push(arguments);}
+ 	    gtag('js', new Date());
+      
+  	  gtag('config', 'UA-60459181-4');
     </script>
-
   </head>
   <body>
     <h1 class='title'><i class='title-the'>the</i> ACADEMIC FRAMEWORK FORUM</h1>

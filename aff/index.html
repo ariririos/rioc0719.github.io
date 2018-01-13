@@ -25,6 +25,36 @@
       b {
         color: #387bbe;
       }
+      @-webkit-keyframes live {
+        0% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      @keyframes live {
+        0% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      .status::before {
+        content: '\25CF';
+        font-size: 16pt;
+        padding-right: 0.125em;
+        color: #12d412;
+        -webkit-animation: live 2s infinite;
+        animation: live 2s infinite;
+      }
       #projects h3 {
         font: 700 12pt 'Hind', sans-serif;
         color: #434343;
@@ -69,7 +99,7 @@
   </head>
   <body>
     <h1 class='title'><i class='title-the'>the</i> ACADEMIC FRAMEWORK FORUM</h1>
-    <p class='center'><b>No cancellations or time changes right now.</b></p>
+    <p class='center status'><b>No cancellations or time changes right now.</b></p>
     <h2 class='header'>What We Are</h2>
       <section id='questions'>
         <p>The Academic Framework Forum (AFF) is a new organization that intends to promote academic success for everyone at OHS. We're a place where people can come to discuss new ideas about academic support, get help organizing those ideas, and support others' ideas and projects.</p>

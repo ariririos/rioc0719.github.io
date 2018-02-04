@@ -47,13 +47,23 @@
           opacity: 1;
         }
       }
-      .status::before {
+      .live::before {
         content: '\25CF';
         font-size: 16pt;
         padding-right: 0.125em;
         color: #12d412;
         -webkit-animation: live 2s infinite;
         animation: live 2s infinite;
+      }
+      .date-passed {
+        color: #777;
+        text-decoration: line-through;
+      }
+      .date-upcoming::after {
+        content: "Signups still open";
+        color: #387bbe;
+        
+        padding-left: 0.25em;
       }
       #projects h3 {
         font: 700 12pt 'Hind', sans-serif;
@@ -99,7 +109,7 @@
   </head>
   <body>
     <h1 class='title'><i class='title-the'>the</i> ACADEMIC FRAMEWORK FORUM</h1>
-    <p class='center status'><b>No cancellations or time changes right now.</b></p>
+    <p class='center live'><b>No cancellations or time changes right now.</b></p>
     <h2 class='header'>What We Are</h2>
       <section id='questions'>
         <p>The Academic Framework Forum (AFF) is a new organization that intends to promote academic success for everyone at OHS. We're a place where people can come to discuss new ideas about academic support, get help organizing those ideas, and support others' ideas and projects.</p>
@@ -132,6 +142,15 @@
           <p class='call'>Want to see your class covered or become a Teaching Assistant? See "Contact Us" below.</p>
         <h3>The Examinations and Assessments Project</h3>
           <p>We run SAT/AP/SAT II practice tests on Saturday mornings at the County Library, and address issues with availability of these tests by providing fee waivers for printing and transportation assistance. Qualified student proctors oversee the test and provide their advice once it's done.</p>
+          <p>Next available dates:</p>
+          <ul>
+            <li class='dead date-passed'>2/3/2018, 10:00 a.m.</li>
+            <li class='live date-upcoming'>2/10/2018, 10:00 a.m.</li>
+            <li class='live date-upcoming'>2/17/2018, 10:00 a.m.</li>
+            <li class='live date-upcoming'>2/24/2018, 10:00 a.m.</li>
+            <li class='live date-upcoming'>3/3/2018, 10:00 a.m.</li>
+            <li class='live date-upcoming'>3/17/2018, 10:00 a.m.</li>
+          </ul>
           <p class='call'>Want to take a practice test or become a proctor? See "Contact Us" below.</p>
         <h3>Summer Programs Outreach (Pilot)</h3>
           <p>We do outreach efforts for the MIT OEOP and UF SSTP summer programs, as well as provide information on other STEM, humanities, research, and leadership summer programs.</p>

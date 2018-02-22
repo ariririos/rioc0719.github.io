@@ -1,0 +1,123 @@
+body {
+  font: 12pt 'Hind', sans-serif;
+}
+
+h1.title {
+  font: 300 18pt 'Lato', sans-serif;
+  color: #387bbe;
+  text-align: center;
+}
+
+h1.title .title-the {
+  font-size: 12pt;
+}
+
+h2.header {
+  font: 700 12pt 'Hind', sans-serif;
+  color: black;
+}
+
+h2.subtitle {
+  font: 300 16pt 'Lato', sans-serif;
+  color: #444;
+  text-align: center;
+}
+
+h2.subtitle .subtitle-the {
+  font-size: 11pt;
+}
+
+b {
+  color: #387bbe;
+}
+
+@-webkit-keyframes live {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes live {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.live::before {
+  content: '\25CF';
+  font-size: 16pt;
+  padding-right: 0.125em;
+  color: #12d412;
+  -webkit-animation: live 2s infinite;
+  animation: live 2s infinite;
+}
+
+.date-passed {
+  color: #777;
+  text-decoration: line-through;
+}
+
+.date-upcoming::after {
+  content: "Signups still open";
+  color: #387bbe;
+  padding-left: 0.25em;
+}
+
+#projects h3 {
+  font: 700 12pt 'Hind', sans-serif;
+  color: #434343;
+}
+
+section p,
+section li,
+section h3 {
+  margin-left: 1.5em;
+}
+
+#projects ul ul {
+  padding-left: 0;
+}
+
+#projects li li {
+  list-style: none;
+}
+
+.person-name {
+  color: #387bbe;
+}
+
+.person-year {
+  color: #434343;
+}
+
+.center {
+  text-align: center;
+}
+
+.center ul {
+  display: inline-block;
+  text-align: left;
+}
+
+p.call::before {
+  font: 20pt 'Lato', sans-serif;
+  content: '\2192';
+  color: #387bbe;
+}
+
+blockquote {
+  border-left: 0.25em solid #387bbe;
+  padding-left: 1em;
+}

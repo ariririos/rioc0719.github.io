@@ -1,0 +1,101 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Hind, Lato, Helvetica, sans-serif;
+}
+
+.mdc-theme--primary-bg {
+    background-color: #387bbe !important;
+}
+
+.mdc-theme--on-primary {
+    color: white !important;
+}
+
+.section {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    background-color: white;
+    color: #222222;
+    background-size: cover;
+}
+
+.section-p {
+    display: block;
+}
+
+.section-p p, .section-p li {
+    font-size: 16pt;
+    padding: 0.5em;
+}
+
+.section-bg-alt {
+    background-color: #387bbe;
+    color: white;
+}
+
+.section-text-main {
+    text-align: left;
+    font-size: 2.5em;
+    color: #387bbe;
+    margin-top: 0.5em;
+    padding: 0.5em;
+}
+
+.section-text-main-alt {
+    color: white;
+}
+
+.section-text-floating-main {
+    align-self: center;
+    font-family: Lato, Helvetica, sans-serif;
+    font-size: 3em;
+    font-weight: 300;
+    text-align: center;
+    margin-top: -2em;
+    padding: 0.5em;
+}
+
+#splash {
+    color: white;
+    background-image: linear-gradient(rgba(0,0,0,0) 0%, rgba(56, 123, 190, 0.85) 50%, rgba(0,0,0,0) 100%),  url('./images/IMG_0188.JPG');
+    background-position: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#splash button {
+    background: #387bbe;
+    margin: 1em;
+}
+
+#splash button a {
+    color: white;
+    text-decoration: none;
+}
+
+#scroll-button img {
+    width: 3.51em;
+    height: 3em;
+}
+
+#ending {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0,0,0,0) 0%, rgba(56, 123, 190, 0.85) 50%, rgba(0,0,0,0) 100%),  url('./images/IMG_0211.JPG');
+    background-position: 50%;
+}
+
+#ending button {
+    background: white;
+}
+
+#ending button a {
+    color: #387bbe;
+    text-decoration: none;
+}

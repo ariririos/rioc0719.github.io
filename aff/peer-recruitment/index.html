@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Become an AFF Peer.</title>
+        <!--material design kit-->
+        <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+        <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href='./index.css'>
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Hind:300&display=swap" rel="stylesheet">
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function(){
+                $("a").on('click', function(event) {
+                    if (this.hash !== "") {
+                        event.preventDefault();
+                        let hash = this.hash;
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 800, function(){
+                            window.location.hash = hash;
+                        });
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id='menu-bar'>
+            <header class="mdc-top-app-bar mdc-theme--primary-bg">
+                <div class="mdc-top-app-bar__row">
+                    <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                        <button class="mdc-icon-button material-icons mdc-top-app-bar__navigation-icon--unbounded">menu</button>
+                        <span class="mdc-top-app-bar__title mdc-theme--on-primary"><i>the</i> AFF</span>
+                    </section>
+                </div>
+            </header>
+        </div>
+        <div id='splash' class='section mdc-top-app-bar--fixed-adjust'>
+            <div class='section-text-floating-main'>
+                    Become an AFF peer tutor and change OHS for the better.
+            </div>
+            <button class='mdc-button mdc-button--raised'><a href='https://forms.gle/aSyyzenzihiUMunA8'>Join us</a></button>
+            <a href='#section2' id='scroll-button'>
+                <img src='./images/scroll.png'></img>
+            </a>
+        </div>
+        <div class='section section-p mdc-top-app-bar--fixed-adjust' id='section2'>
+            <div class='section-text-main'>
+                We're OHS students helping other students succeed through peer tutoring. We're the Academic Framework Forum.
+            </div>
+            <p>
+                We're recruiting for tutors in every subject, at every level: from Liberal Arts Math to Algebra I to AP Calculus AB; from Leadership to English I Honors to AP Lit; from SAT to ACT to PSAT. We want every OHS student to have access to a tutor and we're asking our fellow students for help.
+            </p>
+        </div>
+        <div class='section section-p mdc-top-app-bar--fixed-adjust'>
+            <div class='section-text-main'>
+                What you can help with:
+            </div>
+            <ul>
+                <li>Math</li>
+                <li>Science</li>
+                <li>English</li>
+                <li>Social studies</li>
+                <li>Translating Spanish to English</li>
+                <li>Standardized exams (SAT, ACT, etc.)</li>
+                <li>Mentoring other students about college and career</li>
+            </ul>
+        </div>
+        <div class='section section-p mdc-top-app-bar--fixed-adjust'>
+                <div class='section-text-main'>
+                    Never tutored before? Wondering what you'll get out of it?
+                </div>
+                <p>No worries! We'll teach you how to tutor and mentor, and give you the resources you'll need to succeed: transportation, funding, location, and logistics.</p>
+                <p>Not only can you get <b>community service hours</b> from this, you'll get support with writing your <b>college and scholarship applications</b> from Cristian Rios, MIT student and 2018 OHS graduate.</p>
+                <p>Other incentives (including <b>$$ and special college/career visits</b>) are in the works!</p>
+            </div>
+        <div class='section section-p mdc-top-app-bar--fixed-adjust'>
+            <div class='section-text-main'>
+                We want students who are committed to helping others, no matter if you think you're a good tutor or mentor.
+            </div>
+            <p>We're students helping other students succeed by filling in gaps where OHS is lacking: including exam preparation and tutoring that works with students' schedules.</p>
+            <p>We're a fully student-run organization. Don't want to tutor? You can help in other ways, like fundraising, outreach, and recruitment.</p>
+        </div>
+        <div class='section section-bg-alt mdc-top-app-bar--fixed-adjust' id='ending'>
+            <div class='section-text-main-alt section-text-floating-main'>
+                Join us! We're making OHS a better place for all students!
+            </div>
+            <button class='mdc-button mdc-button--raised'><a href='https://forms.gle/aSyyzenzihiUMunA8'>Sign up to learn more!</a></button>
+        </div>
+    </body>
+</html>

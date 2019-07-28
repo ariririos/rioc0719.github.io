@@ -16,6 +16,7 @@
             gtag('js', new Date());
 
             gtag('config', 'UA-60459181-5');
+
         </script>
 
         <!--material design kit-->
@@ -31,7 +32,7 @@
             crossorigin="anonymous"></script>
         <script>
             $(document).ready(function(){
-                $("a").on('click', function(event) {
+                $("#scroll-button").on('click', function(event) {
                     if (this.hash !== "") {
                         event.preventDefault();
                         let hash = this.hash;
@@ -41,6 +42,11 @@
                             window.location.hash = hash;
                         });
                     }
+                });
+                $('#gform-button').on('click', function() {
+                    gtag('event', 'click', {
+                        'event_category': 'gform'
+                    });
                 });
             });
         </script>
@@ -60,7 +66,7 @@
             <div class='section-text-floating-main'>
                     Become an AFF peer tutor and change OHS for the better.
             </div>
-            <button class='mdc-button mdc-button--raised'><a href='https://forms.gle/aSyyzenzihiUMunA8'>Join us</a></button>
+            <button class='mdc-button mdc-button--raised' id='gform-button'><a href='https://forms.gle/aSyyzenzihiUMunA8'>Join us</a></button>
             <a href='#section2' id='scroll-button'>
                 <img src='./images/scroll.png'></img>
             </a>
@@ -106,7 +112,7 @@
             <div class='section-text-main-alt section-text-floating-main'>
                 Join us! We're making OHS a better place for all students!
             </div>
-            <button class='mdc-button mdc-button--raised'><a href='https://forms.gle/aSyyzenzihiUMunA8'>Sign up to learn more!</a></button>
+            <button class='mdc-button mdc-button--raised' id='gform-button'><a href='https://forms.gle/aSyyzenzihiUMunA8'>Sign up to learn more!</a></button>
         </div>
     </body>
 </html>
